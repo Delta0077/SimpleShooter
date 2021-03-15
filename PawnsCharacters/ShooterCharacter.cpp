@@ -2,6 +2,7 @@
 
 
 #include "ShooterCharacter.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AShooterCharacter::AShooterCharacter()
@@ -58,5 +59,3 @@ void AShooterCharacter::LookRightLeftRate(float AxisValue)
 {
 	AddControllerYawInput(AxisValue * RotationRate * GetWorld()->GetDeltaSeconds());
 }
-
-
