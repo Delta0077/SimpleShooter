@@ -19,6 +19,7 @@ void AShooterCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
+	GetMesh->
 	
 }
 
