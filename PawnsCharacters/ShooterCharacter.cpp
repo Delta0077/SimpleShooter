@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "ShooterAssetPack/Gun.h"
 
+
 // Sets default values
 AShooterCharacter::AShooterCharacter()
 {
@@ -19,7 +20,9 @@ void AShooterCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
-	GetMesh->
+	GetMesh()->HideBoneByName(TEXT("weapon_r"), EPhysBodyOp::PBO_None);
+	Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
+	Gun->SetOwner(this);
 	
 }
 
