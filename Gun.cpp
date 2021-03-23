@@ -31,8 +31,8 @@ void AGun::PullTrigger()
 	AController* OwnerController = OwnerPawn->GetController();
 	if(OwnerController == nullptr) return;
 
-	FVector Location;
-	FRotator Rotation;
+	FVector Location; // Out Parameter
+	FRotator Rotation; // Out Parameter
 
 	OwnerController->GetPlayerViewPoint(Location, Rotation);
 	
