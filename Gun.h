@@ -6,6 +6,8 @@
 #include "GameFramework/Actor.h"
 #include "Gun.generated.h"
 
+class UGamePlayStatics;
+
 UCLASS()
 class SHOOTERASSETPACK_API AGun : public AActor
 {
@@ -36,4 +38,7 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	float MaxRange = 10000.f;
+
+	UPROPERTY(EditDefaultsOnly, Category="FX")
+	UParticleSystem* HitEffect;
 };
