@@ -39,6 +39,9 @@ private:
 	UPROPERTY(EditAnywhere)
 	float MaxRange = 10000.f;
 
-	UPROPERTY(EditDefaultsOnly, Category="FX")
+	UPROPERTY(EditAnywhere)
 	UParticleSystem* HitEffect;
+
+	UPROPERTY(EditAnywhere)
+	float Damage = 10.f;
 };
