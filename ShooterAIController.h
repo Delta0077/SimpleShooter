@@ -6,9 +6,6 @@
 #include "AIController.h"
 #include "ShooterAIController.generated.h"
 
-/**
- * 
- */
 UCLASS()
 class SHOOTERASSETPACK_API AShooterAIController : public AAIController
 {
