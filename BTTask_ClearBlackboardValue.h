@@ -17,4 +17,7 @@ class SHOOTERASSETPACK_API UBTTask_ClearBlackboardValue : public UBTTask_Blackbo
 
 public:
 	UBTTask_ClearBlackboardValue();
+protected:
+	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
+
 };
