@@ -3,3 +3,9 @@
 
 #include "MyGameModeBase.h"
 
+
+
+void AMyGameModeBase::PawnKilled(APawn* PawnKilled) 
+{
+    
+}
